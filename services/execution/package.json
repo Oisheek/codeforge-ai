@@ -1,0 +1,10 @@
+{
+  "name": "@codeforge/execution",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {
+    "@codeforge/tools": "workspace:*",
+    "@codeforge/shared": "workspace:*"
+  }
+}

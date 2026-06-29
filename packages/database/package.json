@@ -1,0 +1,10 @@
+{
+  "name": "@codeforge/database",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {
+    "mongoose": "^8.3.0",
+    "@codeforge/shared": "workspace:*"
+  }
+}

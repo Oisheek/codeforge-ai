@@ -1,0 +1,11 @@
+{
+  "name": "@codeforge/agents",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {
+    "@codeforge/shared": "workspace:*",
+    "@codeforge/llm": "workspace:*",
+    "@codeforge/tools": "workspace:*"
+  }
+}

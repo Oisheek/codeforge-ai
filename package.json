@@ -1,0 +1,16 @@
+{
+  "name": "codeforge-ai",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev:desktop": "pnpm --filter @codeforge/desktop dev",
+    "dev:website": "pnpm --filter @codeforge/website dev",
+    "build:desktop": "pnpm --filter @codeforge/desktop build",
+    "build:website": "pnpm --filter @codeforge/website build",
+    "install:all": "pnpm install"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}

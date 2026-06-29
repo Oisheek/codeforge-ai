@@ -1,0 +1,10 @@
+{
+  "name": "@codeforge/tools",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {
+    "glob": "^10.3.0",
+    "ignore": "^5.3.0"
+  }
+}

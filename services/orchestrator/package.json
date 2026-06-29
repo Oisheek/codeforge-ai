@@ -1,0 +1,12 @@
+{
+  "name": "@codeforge/orchestrator",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {
+    "@codeforge/shared": "workspace:*",
+    "@codeforge/tools": "workspace:*",
+    "@codeforge/llm": "workspace:*",
+    "@codeforge/agents": "workspace:*"
+  }
+}
