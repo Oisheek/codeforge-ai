@@ -7,7 +7,7 @@ class ReviewerAgent {
   }
 
   async review(task, repoSummary, changesSummary) {
-    const { modelRouter } = require('@codeforge/llm');
+    const { modelRouter } = require('../../providers');
     const prompt = require('@codeforge/llm/prompts/reviewer.prompt');
 
     const response = await this.llmClient.chat({

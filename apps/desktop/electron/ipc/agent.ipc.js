@@ -11,8 +11,8 @@ module.exports = function registerAgentIPC({ ipcMain, mainWindow }) {
     const resolvedPath = path.resolve(projectPath);
 
     // Lazy-load to avoid circular deps at startup
-        const { createDebuggingLoop } = require('../../../../services/orchestrator/debugging-loop');
-    const openrouter = require('../../../../packages/llm/openrouter');
+        const { createDebuggingLoop } = require('../../../../packages/orchestrator/debugging-loop');
+    const openrouter = require('../../../../packages/providers/openrouter');
     const tools = require('../../../../packages/tools');
 
     const apiKey = options.apiKey || process.env.OPENROUTER_API_KEY || '';

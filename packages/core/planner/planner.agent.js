@@ -7,7 +7,7 @@ class SupervisorAgent {
   }
 
   async plan(task, repoSummary, context) {
-    const { modelRouter } = require('@codeforge/llm');
+    const { modelRouter } = require('../../providers');
     const prompt = require('@codeforge/llm/prompts/supervisor.prompt');
 
     const response = await this.llmClient.chat({

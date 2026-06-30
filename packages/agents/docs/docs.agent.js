@@ -7,7 +7,7 @@ class DocsAgent {
   }
 
   async generate(task, changesSummary) {
-    const { modelRouter } = require('@codeforge/llm');
+    const { modelRouter } = require('../../providers');
     const prompt = require('@codeforge/llm/prompts/docs.prompt');
 
     const response = await this.llmClient.chat({

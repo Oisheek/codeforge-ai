@@ -7,7 +7,7 @@ class CoderAgent {
   }
 
   async implement(step, repoSummary, context, recentFiles) {
-    const { modelRouter } = require('@codeforge/llm');
+    const { modelRouter } = require('../../providers');
     const prompt = require('@codeforge/llm/prompts/coder.prompt');
 
     const response = await this.llmClient.chat({

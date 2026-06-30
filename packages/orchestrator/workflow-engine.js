@@ -207,7 +207,7 @@ class WorkflowEngine extends EventEmitter {
   }
 
   async _runSupervisor(task, repoSummary, taskManager) {
-    const { modelRouter } = require('@codeforge/llm');
+    const { modelRouter } = require('../providers');
     const prompt = require('@codeforge/llm/prompts/supervisor.prompt');
     const response = await this.llmClient.chat({
       model: modelRouter.getModelForRole('supervisor'),
@@ -217,7 +217,7 @@ class WorkflowEngine extends EventEmitter {
   }
 
   async _runCoder(step, repoSummary, taskManager, executor) {
-    const { modelRouter } = require('@codeforge/llm');
+    const { modelRouter } = require('../providers');
     const prompt = require('@codeforge/llm/prompts/coder.prompt');
 
     // Gather context about recently changed files
@@ -244,7 +244,7 @@ class WorkflowEngine extends EventEmitter {
   }
 
   async _runReviewer(task, repoSummary, taskManager) {
-    const { modelRouter } = require('@codeforge/llm');
+    const { modelRouter } = require('../providers');
     const prompt = require('@codeforge/llm/prompts/reviewer.prompt');
 
     const changesSummary = taskManager.history
@@ -259,7 +259,7 @@ class WorkflowEngine extends EventEmitter {
   }
 
   async _runDocs(task, taskManager) {
-    const { modelRouter } = require('@codeforge/llm');
+    const { modelRouter } = require('../providers');
     const prompt = require('@codeforge/llm/prompts/docs.prompt');
 
     const changesSummary = taskManager.history

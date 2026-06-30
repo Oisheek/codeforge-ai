@@ -1,0 +1,50 @@
+/**
+ * Planner Task Types
+ * Every executable action inside CodeForge must belong to one of these types.
+ */
+
+const TASK_TYPES = Object.freeze({
+  SEARCH_FILES: "SEARCH_FILES",
+  SEARCH_SYMBOL: "SEARCH_SYMBOL",
+  READ_FILE: "READ_FILE",
+  READ_SYMBOL: "READ_SYMBOL",
+
+  BUILD_CONTEXT: "BUILD_CONTEXT",
+
+  GENERATE_PATCH: "GENERATE_PATCH",
+  APPLY_PATCH: "APPLY_PATCH",
+
+  RUN_COMMAND: "RUN_COMMAND",
+  RUN_TESTS: "RUN_TESTS",
+
+  REVIEW_PATCH: "REVIEW_PATCH",
+  REVIEW_SECURITY: "REVIEW_SECURITY",
+
+  FORMAT_CODE: "FORMAT_CODE",
+
+  UPDATE_DOCUMENTATION: "UPDATE_DOCUMENTATION",
+
+  SUMMARIZE: "SUMMARIZE"
+});
+
+const TASK_PRIORITY = Object.freeze({
+  LOW: "LOW",
+  NORMAL: "NORMAL",
+  HIGH: "HIGH",
+  CRITICAL: "CRITICAL"
+});
+
+const TASK_STATUS = Object.freeze({
+  PENDING: "PENDING",
+  READY: "READY",
+  RUNNING: "RUNNING",
+  COMPLETED: "COMPLETED",
+  FAILED: "FAILED",
+  SKIPPED: "SKIPPED"
+});
+
+module.exports = {
+  TASK_TYPES,
+  TASK_PRIORITY,
+  TASK_STATUS
+};

@@ -118,7 +118,7 @@ class DebuggingLoop extends EventEmitter {
    */
   async _shouldRetry(task, attemptNumber) {
     try {
-      const { modelRouter } = require('@codeforge/llm');
+      const { modelRouter } = require('../providers');
       const prompt = require('@codeforge/llm/prompts/supervisor.prompt');
 
       const response = await this.llmClient.chat({
